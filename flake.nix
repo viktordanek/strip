@@ -22,8 +22,8 @@
                                     whitespace = [ " " "\t" "\n" "\r" "\f" ] ;
                                     in
                                         if length == 0 then string
-                                        else if builtins.any ( w : w == first ) whitespace then strip tail
-                                        else if builtins.any ( w : w == last ) whitespace then strip head
+                                        else if builtins.any ( w : w == first ) whitespace then lib tail
+                                        else if builtins.any ( w : w == last ) whitespace then lib head
                                         else string ;
                         in
                             {
